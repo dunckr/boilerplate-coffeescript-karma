@@ -5,14 +5,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-karma');
 
-
   grunt.initConfig({
     watch: {
       files:['src/*.coffee'],
       tasks:['coffee']
     },
     coffee: {
-      dist: {
+      src: {
         files: [{
           expand: true,
           cwd: 'src',
@@ -23,10 +22,10 @@ module.exports = function(grunt) {
       },
     },
     karma: {
-        unit: {
-            configFile: 'karma.conf.js',
-            autoWatch: true
-        }
+      unit: {
+          configFile: 'karma.conf.js',
+          autoWatch: true
+      }
     },
     clean: {
         dist: '.tmp'

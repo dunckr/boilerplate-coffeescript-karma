@@ -31,4 +31,7 @@ module.exports = function(grunt) {
         dist: '.tmp'
     }
   });
+
+  grunt.registerTask('server', 'watch');
+  grunt.registerTask('test', 'karma');
 };

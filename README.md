@@ -1,18 +1,24 @@
-Boilerplate CoffeeScript Scaffold with Karma for TDD
+Boilerplate CoffeeScript Scaffold including Karma for TDD
 =========================== 
 
 The most basic CoffeeScript template to start your project.
 
-## To Use
+## Install
 
     npm install
 
-Source goes into src and tests into test.
+## Run
 
 Start compile watch
 
     grunt watch
 
-Run tests
+## Tests
+
+Begin running tests
 
     grunt karma
+    
+## License
+
+MIT © [Duncan Beaton](http://dunckr.com)
